@@ -70,7 +70,7 @@ The two tasks are configured with:
 
 You can see the output of the command in the `tasks/edf.txt` file.
 
-In the output, you can see that the difference between the execution of the two tasks is always less than 10ms, which proves that the scheduler is working.
+In the output, you can see that the difference between the execution of the two tasks is always less than 11 ms, which proves that the scheduler is working.
 
 ## Intel RealSense
 
