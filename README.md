@@ -33,6 +33,44 @@
 
 ## Using the real-time kernel
 
+### Schedulers
+> [Official reference](https://documentation.ubuntu.com/real-time/en/latest/tutorial/first-rt-app/4-schedulers/)
+
+#### Completely Fair Scheduling (CFS)
+This scheduler is **NOT** real-time, but it can be useful when running normal programs.  
+You can try it by copying the `tasks/cfs.c` file in this repository and compiling it with: `gcc cfs.c -o cfs && ./cfs`
+
+> Remember to install `gcc` first with `sudo apt install build-essentials`.
+
+#### Priority-based scheduling (FIFO)
+Tasks with higher priority are provided with much more CPU time.  
+Run it with: `gcc fifo.c -o fifo && sudo ./fifo`.  
+> Important, **run it with `sudo`**! Or else the program won't have the necessary permissions to access the real-time kernel.
+
+Example execution:
+```
+~/home/pi/tasks> sudo ./fifo
+thread1 priority: 89
+thread2 priority: 1
+Calls made on thread1: 96075
+Calls made on thread2: 3926
+```
+As you can see, the task with more priority runs a lot more times than the other one.
+
+#### Earliest Deadline First (EDF)
+This is the strictest scheduler available, and garantees that tasks will be ordered by the deadline of each task.  
+It should be used for tasks that must not be skipped.
+
+Run it with: `gcc edf+wait.c -o edf && ./edf`
+
+The two tasks are configured with:
+- Computing time = 10 ms
+- Deadline = 11 ms
+- Period = 22 ms
+
+You can see the output of the command in the `tasks/edf.txt` file.
+
+In the output, you can see that the difference between the execution of the two tasks is always less than 10ms, which proves that the scheduler is working.
 
 ## Intel RealSense
 
