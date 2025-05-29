@@ -83,14 +83,5 @@ You can see the output of the command in the [`tasks/edf.txt`](./tasks/edf.txt) 
 
 In the output, you can see that the difference between the execution of the two tasks is always less than 11 ms, which proves that the scheduler is working.
 
-## Intel RealSense
-
-- Intel page: `https://dev.intelrealsense.com/docs/using-depth-camera-with-raspberry-pi-3`
-- Manual intel: `https://github.com/IntelRealSense/librealsense/blob/development/doc/installation.md`
-- `librealsense`: `https://github.com/IntelRealSense/librealsense`
-
-## Other links
-
-- `https://github.com/mathklk/realsense_raspberry_pi4`
-
-RT-TESTS PER RASPBERRY PI
+### Other tools
+You can also use the [rt-tools](https://wiki.linuxfoundation.org/realtime/documentation/howto/tools/rt-tests) utility to see if your system is real-time.
