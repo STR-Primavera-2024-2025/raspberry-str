@@ -1,0 +1,521 @@
+thread1:   period =  0 s
+          runtime = 10 ms
+         deadline = 11 ms
+thread2:   period =  0 s
+          runtime = 10 ms
+         deadline = 11 ms
+
+Calls made on thread1: 256
+Calls made on thread2: 256
+thread1: 22	thread2: 23	difference: 1
+
+thread1: 44	thread2: 46	difference: 2
+
+thread1: 66	thread2: 68	difference: 2
+
+thread1: 88	thread2: 91	difference: 3
+
+thread1: 110	thread2: 113	difference: 3
+
+thread1: 132	thread2: 135	difference: 3
+
+thread1: 154	thread2: 157	difference: 3
+
+thread1: 176	thread2: 181	difference: 5
+
+thread1: 198	thread2: 203	difference: 5
+
+thread1: 220	thread2: 227	difference: 7
+
+thread1: 242	thread2: 251	difference: 9
+
+thread1: 264	thread2: 274	difference: 10
+
+thread1: 286	thread2: 296	difference: 10
+
+thread1: 308	thread2: 318	difference: 10
+
+thread1: 330	thread2: 340	difference: 10
+
+thread1: 352	thread2: 362	difference: 10
+
+thread1: 374	thread2: 384	difference: 10
+
+thread1: 396	thread2: 406	difference: 10
+
+thread1: 418	thread2: 428	difference: 10
+
+thread1: 440	thread2: 450	difference: 10
+
+thread1: 462	thread2: 472	difference: 10
+
+thread1: 484	thread2: 494	difference: 10
+
+thread1: 506	thread2: 516	difference: 10
+
+thread1: 528	thread2: 538	difference: 10
+
+thread1: 550	thread2: 560	difference: 10
+
+thread1: 572	thread2: 582	difference: 10
+
+thread1: 594	thread2: 604	difference: 10
+
+thread1: 616	thread2: 626	difference: 10
+
+thread1: 638	thread2: 648	difference: 10
+
+thread1: 660	thread2: 670	difference: 10
+
+thread1: 682	thread2: 692	difference: 10
+
+thread1: 704	thread2: 714	difference: 10
+
+thread1: 726	thread2: 736	difference: 10
+
+thread1: 748	thread2: 758	difference: 10
+
+thread1: 770	thread2: 780	difference: 10
+
+thread1: 792	thread2: 802	difference: 10
+
+thread1: 814	thread2: 824	difference: 10
+
+thread1: 836	thread2: 846	difference: 10
+
+thread1: 858	thread2: 868	difference: 10
+
+thread1: 880	thread2: 890	difference: 10
+
+thread1: 902	thread2: 912	difference: 10
+
+thread1: 924	thread2: 934	difference: 10
+
+thread1: 946	thread2: 956	difference: 10
+
+thread1: 968	thread2: 978	difference: 10
+
+thread1: 990	thread2: 1000	difference: 10
+
+thread1: 1012	thread2: 1022	difference: 10
+
+thread1: 1034	thread2: 1044	difference: 10
+
+thread1: 1056	thread2: 1066	difference: 10
+
+thread1: 1078	thread2: 1088	difference: 10
+
+thread1: 1100	thread2: 1110	difference: 10
+
+thread1: 1122	thread2: 1132	difference: 10
+
+thread1: 1144	thread2: 1154	difference: 10
+
+thread1: 1166	thread2: 1176	difference: 10
+
+thread1: 1188	thread2: 1198	difference: 10
+
+thread1: 1210	thread2: 1220	difference: 10
+
+thread1: 1232	thread2: 1242	difference: 10
+
+thread1: 1254	thread2: 1264	difference: 10
+
+thread1: 1276	thread2: 1286	difference: 10
+
+thread1: 1298	thread2: 1308	difference: 10
+
+thread1: 1320	thread2: 1330	difference: 10
+
+thread1: 1342	thread2: 1352	difference: 10
+
+thread1: 1364	thread2: 1374	difference: 10
+
+thread1: 1386	thread2: 1396	difference: 10
+
+thread1: 1408	thread2: 1418	difference: 10
+
+thread1: 1430	thread2: 1440	difference: 10
+
+thread1: 1452	thread2: 1462	difference: 10
+
+thread1: 1474	thread2: 1484	difference: 10
+
+thread1: 1496	thread2: 1506	difference: 10
+
+thread1: 1518	thread2: 1528	difference: 10
+
+thread1: 1540	thread2: 1550	difference: 10
+
+thread1: 1562	thread2: 1572	difference: 10
+
+thread1: 1584	thread2: 1594	difference: 10
+
+thread1: 1606	thread2: 1616	difference: 10
+
+thread1: 1628	thread2: 1638	difference: 10
+
+thread1: 1650	thread2: 1660	difference: 10
+
+thread1: 1672	thread2: 1682	difference: 10
+
+thread1: 1694	thread2: 1704	difference: 10
+
+thread1: 1716	thread2: 1726	difference: 10
+
+thread1: 1738	thread2: 1748	difference: 10
+
+thread1: 1760	thread2: 1770	difference: 10
+
+thread1: 1782	thread2: 1792	difference: 10
+
+thread1: 1804	thread2: 1814	difference: 10
+
+thread1: 1826	thread2: 1836	difference: 10
+
+thread1: 1848	thread2: 1858	difference: 10
+
+thread1: 1870	thread2: 1880	difference: 10
+
+thread1: 1892	thread2: 1902	difference: 10
+
+thread1: 1914	thread2: 1924	difference: 10
+
+thread1: 1936	thread2: 1946	difference: 10
+
+thread1: 1958	thread2: 1968	difference: 10
+
+thread1: 1980	thread2: 1990	difference: 10
+
+thread1: 2002	thread2: 2012	difference: 10
+
+thread1: 2024	thread2: 2034	difference: 10
+
+thread1: 2046	thread2: 2056	difference: 10
+
+thread1: 2068	thread2: 2078	difference: 10
+
+thread1: 2090	thread2: 2100	difference: 10
+
+thread1: 2112	thread2: 2122	difference: 10
+
+thread1: 2134	thread2: 2144	difference: 10
+
+thread1: 2156	thread2: 2166	difference: 10
+
+thread1: 2178	thread2: 2188	difference: 10
+
+thread1: 2200	thread2: 2210	difference: 10
+
+thread1: 2222	thread2: 2232	difference: 10
+
+thread1: 2244	thread2: 2254	difference: 10
+
+thread1: 2266	thread2: 2276	difference: 10
+
+thread1: 2288	thread2: 2298	difference: 10
+
+thread1: 2310	thread2: 2320	difference: 10
+
+thread1: 2332	thread2: 2342	difference: 10
+
+thread1: 2354	thread2: 2364	difference: 10
+
+thread1: 2376	thread2: 2386	difference: 10
+
+thread1: 2398	thread2: 2408	difference: 10
+
+thread1: 2420	thread2: 2430	difference: 10
+
+thread1: 2442	thread2: 2452	difference: 10
+
+thread1: 2464	thread2: 2474	difference: 10
+
+thread1: 2486	thread2: 2496	difference: 10
+
+thread1: 2508	thread2: 2518	difference: 10
+
+thread1: 2530	thread2: 2540	difference: 10
+
+thread1: 2552	thread2: 2562	difference: 10
+
+thread1: 2574	thread2: 2584	difference: 10
+
+thread1: 2596	thread2: 2606	difference: 10
+
+thread1: 2618	thread2: 2628	difference: 10
+
+thread1: 2640	thread2: 2650	difference: 10
+
+thread1: 2662	thread2: 2672	difference: 10
+
+thread1: 2684	thread2: 2694	difference: 10
+
+thread1: 2706	thread2: 2716	difference: 10
+
+thread1: 2728	thread2: 2738	difference: 10
+
+thread1: 2750	thread2: 2760	difference: 10
+
+thread1: 2772	thread2: 2782	difference: 10
+
+thread1: 2794	thread2: 2804	difference: 10
+
+thread1: 2816	thread2: 2826	difference: 10
+
+thread1: 2838	thread2: 2848	difference: 10
+
+thread1: 2860	thread2: 2870	difference: 10
+
+thread1: 2882	thread2: 2892	difference: 10
+
+thread1: 2904	thread2: 2914	difference: 10
+
+thread1: 2926	thread2: 2936	difference: 10
+
+thread1: 2948	thread2: 2958	difference: 10
+
+thread1: 2970	thread2: 2980	difference: 10
+
+thread1: 2992	thread2: 3002	difference: 10
+
+thread1: 3014	thread2: 3024	difference: 10
+
+thread1: 3036	thread2: 3046	difference: 10
+
+thread1: 3058	thread2: 3068	difference: 10
+
+thread1: 3080	thread2: 3090	difference: 10
+
+thread1: 3102	thread2: 3112	difference: 10
+
+thread1: 3124	thread2: 3134	difference: 10
+
+thread1: 3146	thread2: 3156	difference: 10
+
+thread1: 3168	thread2: 3178	difference: 10
+
+thread1: 3190	thread2: 3200	difference: 10
+
+thread1: 3212	thread2: 3222	difference: 10
+
+thread1: 3234	thread2: 3245	difference: 11
+
+thread1: 3256	thread2: 3267	difference: 11
+
+thread1: 3278	thread2: 3289	difference: 11
+
+thread1: 3300	thread2: 3311	difference: 11
+
+thread1: 3322	thread2: 3333	difference: 11
+
+thread1: 3344	thread2: 3355	difference: 11
+
+thread1: 3366	thread2: 3377	difference: 11
+
+thread1: 3388	thread2: 3399	difference: 11
+
+thread1: 3410	thread2: 3421	difference: 11
+
+thread1: 3432	thread2: 3443	difference: 11
+
+thread1: 3454	thread2: 3465	difference: 11
+
+thread1: 3476	thread2: 3487	difference: 11
+
+thread1: 3498	thread2: 3509	difference: 11
+
+thread1: 3520	thread2: 3531	difference: 11
+
+thread1: 3542	thread2: 3553	difference: 11
+
+thread1: 3564	thread2: 3575	difference: 11
+
+thread1: 3586	thread2: 3597	difference: 11
+
+thread1: 3608	thread2: 3619	difference: 11
+
+thread1: 3630	thread2: 3641	difference: 11
+
+thread1: 3652	thread2: 3663	difference: 11
+
+thread1: 3674	thread2: 3685	difference: 11
+
+thread1: 3696	thread2: 3707	difference: 11
+
+thread1: 3718	thread2: 3729	difference: 11
+
+thread1: 3740	thread2: 3751	difference: 11
+
+thread1: 3762	thread2: 3773	difference: 11
+
+thread1: 3784	thread2: 3795	difference: 11
+
+thread1: 3806	thread2: 3817	difference: 11
+
+thread1: 3828	thread2: 3839	difference: 11
+
+thread1: 3850	thread2: 3861	difference: 11
+
+thread1: 3873	thread2: 3883	difference: 10
+
+thread1: 3895	thread2: 3905	difference: 10
+
+thread1: 3917	thread2: 3927	difference: 10
+
+thread1: 3939	thread2: 3949	difference: 10
+
+thread1: 3961	thread2: 3971	difference: 10
+
+thread1: 3983	thread2: 3993	difference: 10
+
+thread1: 4005	thread2: 4015	difference: 10
+
+thread1: 4027	thread2: 4037	difference: 10
+
+thread1: 4049	thread2: 4059	difference: 10
+
+thread1: 4071	thread2: 4081	difference: 10
+
+thread1: 4093	thread2: 4103	difference: 10
+
+thread1: 4115	thread2: 4125	difference: 10
+
+thread1: 4137	thread2: 4147	difference: 10
+
+thread1: 4159	thread2: 4169	difference: 10
+
+thread1: 4181	thread2: 4191	difference: 10
+
+thread1: 4203	thread2: 4213	difference: 10
+
+thread1: 4225	thread2: 4235	difference: 10
+
+thread1: 4247	thread2: 4257	difference: 10
+
+thread1: 4269	thread2: 4279	difference: 10
+
+thread1: 4291	thread2: 4301	difference: 10
+
+thread1: 4313	thread2: 4323	difference: 10
+
+thread1: 4335	thread2: 4345	difference: 10
+
+thread1: 4357	thread2: 4367	difference: 10
+
+thread1: 4379	thread2: 4389	difference: 10
+
+thread1: 4401	thread2: 4411	difference: 10
+
+thread1: 4423	thread2: 4433	difference: 10
+
+thread1: 4445	thread2: 4455	difference: 10
+
+thread1: 4467	thread2: 4477	difference: 10
+
+thread1: 4489	thread2: 4499	difference: 10
+
+thread1: 4511	thread2: 4521	difference: 10
+
+thread1: 4533	thread2: 4543	difference: 10
+
+thread1: 4555	thread2: 4565	difference: 10
+
+thread1: 4577	thread2: 4587	difference: 10
+
+thread1: 4599	thread2: 4609	difference: 10
+
+thread1: 4621	thread2: 4631	difference: 10
+
+thread1: 4643	thread2: 4653	difference: 10
+
+thread1: 4665	thread2: 4675	difference: 10
+
+thread1: 4687	thread2: 4697	difference: 10
+
+thread1: 4709	thread2: 4719	difference: 10
+
+thread1: 4731	thread2: 4741	difference: 10
+
+thread1: 4753	thread2: 4763	difference: 10
+
+thread1: 4775	thread2: 4785	difference: 10
+
+thread1: 4797	thread2: 4807	difference: 10
+
+thread1: 4819	thread2: 4829	difference: 10
+
+thread1: 4841	thread2: 4851	difference: 10
+
+thread1: 4863	thread2: 4873	difference: 10
+
+thread1: 4885	thread2: 4895	difference: 10
+
+thread1: 4907	thread2: 4917	difference: 10
+
+thread1: 4929	thread2: 4939	difference: 10
+
+thread1: 4951	thread2: 4961	difference: 10
+
+thread1: 4973	thread2: 4983	difference: 10
+
+thread1: 4995	thread2: 5005	difference: 10
+
+thread1: 5017	thread2: 5027	difference: 10
+
+thread1: 5039	thread2: 5049	difference: 10
+
+thread1: 5061	thread2: 5071	difference: 10
+
+thread1: 5083	thread2: 5093	difference: 10
+
+thread1: 5105	thread2: 5115	difference: 10
+
+thread1: 5127	thread2: 5137	difference: 10
+
+thread1: 5149	thread2: 5159	difference: 10
+
+thread1: 5171	thread2: 5181	difference: 10
+
+thread1: 5193	thread2: 5203	difference: 10
+
+thread1: 5215	thread2: 5225	difference: 10
+
+thread1: 5237	thread2: 5247	difference: 10
+
+thread1: 5259	thread2: 5269	difference: 10
+
+thread1: 5281	thread2: 5291	difference: 10
+
+thread1: 5303	thread2: 5313	difference: 10
+
+thread1: 5325	thread2: 5335	difference: 10
+
+thread1: 5347	thread2: 5357	difference: 10
+
+thread1: 5369	thread2: 5379	difference: 10
+
+thread1: 5391	thread2: 5401	difference: 10
+
+thread1: 5413	thread2: 5423	difference: 10
+
+thread1: 5435	thread2: 5445	difference: 10
+
+thread1: 5457	thread2: 5467	difference: 10
+
+thread1: 5479	thread2: 5489	difference: 10
+
+thread1: 5501	thread2: 5511	difference: 10
+
+thread1: 5523	thread2: 5533	difference: 10
+
+thread1: 5545	thread2: 5555	difference: 10
+
+thread1: 5567	thread2: 5577	difference: 10
+
+thread1: 5589	thread2: 5599	difference: 10
+
+thread1: 5611	thread2: 5621	difference: 10
+
+thread1: 5633	thread2: 5643	difference: 10
+

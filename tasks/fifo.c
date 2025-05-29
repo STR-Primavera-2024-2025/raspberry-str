@@ -72,8 +72,8 @@ int main(void) {
   /* Save scheduler-specific attributes */
   memset(&param1, 0, sizeof(param1));
   pthread_attr_getschedparam(&attr1, &param1);
-  /* param1.sched_priority = MIN(89,
-                                 sched_get_priority_max(SCHED_FIFO)); */
+  param1.sched_priority = MIN(89,
+                                 sched_get_priority_max(SCHED_FIFO));
   printf("thread1 priority: %d\n", param1.sched_priority);
 
   /*-- Prepare thread2, assigning RT-class scheduler --*/
@@ -84,7 +84,7 @@ int main(void) {
   /* Save scheduler-specific attributes */
   memset(&param2, 0, sizeof(param2));
   pthread_attr_getschedparam(&attr2, &param2);
-  /* param2.sched_priority = sched_get_priority_min(SCHED_FIFO); */
+  param2.sched_priority = sched_get_priority_min(SCHED_FIFO);
   printf("thread2 priority: %d\n", param2.sched_priority);
 
   /*-- Call thread function on separate threads --*/

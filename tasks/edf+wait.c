@@ -43,8 +43,8 @@ struct sched_attr attr1 = {
     .sched_policy = SCHED_DEADLINE,
     .sched_runtime = 10 * 1000 * 1000,
     .sched_deadline = 11 * 1000 * 1000,
-    .sched_period = 2 * 1000 * 1000 * 1000,
-    // .sched_period = 20 * 1000 * 1000,
+    //.sched_period = 2 * 1000 * 1000 * 1000,
+    .sched_period = 22 * 1000 * 1000,
 };
 
 struct sched_attr attr2 = {
@@ -52,38 +52,66 @@ struct sched_attr attr2 = {
     .sched_policy = SCHED_DEADLINE,
     .sched_runtime = 10 * 1000 * 1000,
     .sched_deadline = 11 * 1000 * 1000,
-    .sched_period = 2 * 1000 * 1000 * 1000,
-    // .sched_period = 20 * 1000 * 1000,
+    //.sched_period = 2 * 1000 * 1000 * 1000,
+    .sched_period = 22 * 1000 * 1000,
 };
+
+#include <time.h>
+#include <errno.h>    
+
+/* msleep(): Sleep for the requested number of milliseconds. */
+int msleep(long msec)
+{
+    struct timespec ts;
+    int res;
+
+    if (msec < 0)
+    {
+        errno = EINVAL;
+        return -1;
+    }
+
+    ts.tv_sec = msec / 1000;
+    ts.tv_nsec = (msec % 1000) * 1000000;
+
+    do {
+        res = nanosleep(&ts, &ts);
+    } while (res && errno == EINTR);
+
+    return res;
+}
+
+uint64_t get_ms() {
+	struct timespec now;
+	clock_gettime( CLOCK_REALTIME, &now );
+	return (uint64_t)now.tv_sec * 1000U + (uint64_t)now.tv_nsec / 1000000U;
+}
 
 int calls_on_thread1 = 0;
 int calls_on_thread2 = 0;
+#define SAMPLE_SIZE 256
+uint64_t samples[SAMPLE_SIZE][2];
 
 void *thread_start(void *arg) {
-  int thread_num = (intptr_t)arg;
-  static bool set_thread1_attr = true;
-  static bool set_thread2_attr = true;
+  int thread_num = (intptr_t)arg-1;
 
-  static int calls_remaining = 100000;
-  do {
-    if (1 == thread_num) {
-      if (set_thread1_attr) {
-        syscall(SYS_sched_setattr, 0, &attr1, 0);
-        set_thread1_attr = false;
-      }
-      calls_on_thread1++;
+
+  for (uint64_t i = 0; i < SAMPLE_SIZE; i++) {
+  	uint64_t start = get_ms();
+    if (thread_num == 0) {
+      ++calls_on_thread1;
     } else {
-      if (set_thread2_attr) {
-        syscall(SYS_sched_setattr, 0, &attr2, 0);
-        set_thread2_attr = false;
-      }
-      calls_on_thread2++;
+      ++calls_on_thread2;
     }
 
-    /* Simulate doing some work */
-    for (int i = 0; i < 20000; i++);
+    while (get_ms() - start < 10);
 
-  } while (--calls_remaining > 0);
+    msleep(22 - (get_ms() - start));
+    
+    uint64_t end = get_ms();
+    samples[i][thread_num] = end;
+    // printf("%lu\n", samples[i][thread_num] - start);
+  }
 
   return (void *)NULL;
 }
@@ -102,7 +130,8 @@ int main(void) {
   }
 
   /*-- Call thread function on separate threads --*/
-
+  uint64_t program_start = get_ms();
+  
   if (0 != pthread_create(&thread1, NULL, &thread_start, (void *)(intptr_t)1)) {
     printf("Failed to create thread1\n");
     exit(EXIT_FAILURE);
@@ -129,6 +158,12 @@ int main(void) {
 
   printf("Calls made on thread1: %d\nCalls made on thread2: %d\n",
          calls_on_thread1, calls_on_thread2);
+
+  for (uint64_t i = 0; i < SAMPLE_SIZE; i++) {
+  	printf("thread1: %lu\t", samples[i][0] - program_start);
+  	printf("thread2: %lu\t", samples[i][1] - program_start);
+  	printf("difference: %lu\n\n", samples[i][1] - samples[i][0]);
+  }
 
   exit(EXIT_SUCCESS);
 }
